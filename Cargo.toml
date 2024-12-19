@@ -1,0 +1,12 @@
+[package]
+name = "guild-manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = { version = "*", default-features = false }
+serenity = { version = "*", default-features = false, features = [
+    "rustls_backend",
+    "model",
+] }
+sqlx = { version = "*", default-features = false, features = ["any"] }
